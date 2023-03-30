@@ -4,14 +4,14 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content= "{{ $title }}" >
   {{ if .Summary }}<meta property="og:description" content="{{ .Summary }}">{{ else }}<meta property="og:description" content="{{ $.Site.Params.Description }}">{{ end }}
-  {{ if .Param "feature_image" }}<meta property="og:image" content="{{ .Param "feature_image" | absURL }}">{{ else }}<meta property="og:image" content="{{ $.Site.Params.Avatar | absURL }}">{{ end }}
+  {{ if .Param "feature_image" }}<meta property="og:image" content="{{ .Param "feature_image" | absURL }}">{{ else }}<meta property="og:image" content="{{ $.Site.Params.Portrait.Path | absURL }}">{{ end }}
   <meta property="og:url" content="{{ .Permalink }}">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content= "{{ $title }}" >
   {{ if .Summary }}<meta property="twitter:description" content="{{ .Summary }}">{{ else }}<meta property="og:description" content="{{ $.Site.Params.Description }}">{{ end }}
-  {{ if .Param "feature_image" }}<meta property="twitter:image" content="{{ .Param "feature_image" | absURL }}">{{ else }}<meta property="og:image" content="{{ $.Site.Params.Avatar | absURL }}">{{ end }}
+  {{ if .Param "feature_image" }}<meta property="twitter:image" content="{{ .Param "feature_image" | absURL }}">{{ else }}<meta property="og:image" content="{{ $.Site.Params.Portrait.Path | absURL }}">{{ end }}
   <meta property="twitter:url" content="{{ .Permalink }}">
 
   <main class="post">
