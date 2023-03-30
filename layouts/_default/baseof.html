@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
+    {{ $title := print .Title " - " .Site.Title }} 
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <head>
         {{ partial "head.html" . }}
     </head>
