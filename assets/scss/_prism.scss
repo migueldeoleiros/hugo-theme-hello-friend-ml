@@ -7,7 +7,7 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
  */
 code[class*="language-"],
 pre[class*="language-"] {
-	color: white;
+	color: #d3dae8 !important;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -31,13 +31,13 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	background: hsl(0, 0%, 8%); /* #141414 */
+	background: hsl(233, 31%, 5%) !important; /* #090a11 */
 }
 
 /* Code blocks */
 pre[class*="language-"] {
 	border-radius: .5em;
-	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+	border: .3em solid 	hsl(231, 16%, 8%); /* #121319 */
 	box-shadow: 1px 1px .5em black inset;
 	margin: .5em 0;
 	overflow: auto;
@@ -46,12 +46,12 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection {
 	/* Firefox */
-	background: hsl(200, 4%, 16%); /* #282A2B */
+	background: hsl(237, 16%, 30%); /* #414259 */
 }
 
 pre[class*="language-"]::selection {
 	/* Safari */
-	background: hsl(200, 4%, 16%); /* #282A2B */
+	background: hsl(237, 16%, 30%); /* #414259 */
 }
 
 /* Text Selection colour */
@@ -70,7 +70,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Inline code */
 :not(pre) > code[class*="language-"] {
 	border-radius: .3em;
-	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
+	border: .3em solid 	hsl(231, 16%, 8%); /* #121319 */
 	box-shadow: 1px 1px .3em -.1em black inset;
 	padding: .15em .2em .05em;
 	white-space: normal;
